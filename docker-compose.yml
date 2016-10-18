@@ -2,5 +2,7 @@ version: "2"
 services:
   web:
     build: ./nginx
+    container_name: api-front
     ports:
       - "80:80"
+      - "443:443"
