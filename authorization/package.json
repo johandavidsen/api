@@ -1,0 +1,13 @@
+{
+  "name": "api-authorization",
+  "version": "0.1.0",
+  "description": "This is the authorization handler for the API",
+  "main": "index.js",
+  "author": "Jóhan Davidsen",
+  "license": "MIT",
+  "dependencies": {
+    "jsonwebtoken": "^7.1.9",
+    "koa": "^1.2.4",
+    "koa-router": "^5.4.0"
+  }
+}
