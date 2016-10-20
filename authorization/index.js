@@ -31,6 +31,7 @@ router.post('/', function *() {
   this.body = 'api'
 })
 
+// Setup a catch all route
 app.use(function *(next) {
   try {
     yield next
