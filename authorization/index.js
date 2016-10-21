@@ -1,6 +1,7 @@
 /** Load dependencies */
 let koa = require('koa')
 let router = require('koa-router')({ prefix: '/authorization' })
+let jwt = require('jsonwebtoken')
 
 /** Setup the application settings */
 let app = koa()
@@ -8,7 +9,7 @@ app.name = 'api-authorization'
 
 // Create the authorization route GET
 router.get('/', function *() {
-  this.body = 'Home page'
+  this.throw('Not Implemented', 501)
 })
 
 // Create the authorization route PUT
@@ -28,7 +29,18 @@ router.delete('/', function *() {
 
 // Create the authorization route POST
 router.post('/', function *() {
-  this.body = 'api'
+  // Set cert key based on environment
+  let cert = 'development'
+  if (process.env.NODE_ENV === 'production') {
+    // This is the letsencrypt private key
+    cert = '/etc/letsencrypt/live/api.fjakkarin.com/privkey.pem'
+  }
+  // Create a token
+  let token = jwt.sign(
+    { scopes: { images: { actions: [ 'get', 'store' ] } } },
+    cert
+  )
+  this.body = token
 })
 
 // Setup a catch all route
@@ -42,6 +54,7 @@ app.use(function *(next) {
   }
 })
 
+// tell app to use routes
 app.use(router.routes())
 
 app.listen(3003)
