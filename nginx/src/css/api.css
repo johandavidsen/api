@@ -36,6 +36,10 @@ footer {
   color: black;
 }
 
+.footer-container-link:last-child {
+  margin-right: 10px;
+}
+
 .footer-container-link:hover {
   opacity: 1;
   border-bottom: 2px solid black;
