@@ -16,6 +16,27 @@ main {
 footer {
   position: fixed;
   bottom: 0px;
-  float:right;
-  width: 100%
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.footer-container {
+  display: inline-flex;
+  justify-content: flex-end;
+}
+
+.footer-container-link {
+  padding-bottom: : 5px;
+  padding-top: 5px;
+  border-bottom: 2px solid white;
+  margin: 5px;
+  opacity: 0.5;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+.footer-container-link:hover {
+  opacity: 1;
+  border-bottom: 2px solid black;
 }
