@@ -8,8 +8,3 @@ services:
       - "443:443"
     volumes:
       - /etc/letsencrypt:/etc/letsencrypt
-    links:
-      - authorization:authorization
-  authorization:
-    build: ./authorization
-    container_name: api-authorization
