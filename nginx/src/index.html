@@ -17,31 +17,17 @@
         <p class="browserupgrade">Tú brúkar ein sera <strong>gamlan</strong> alnótskaga. Vinaliga <a href="http://browsehappy.com/">nýggja tín alnótskaga</a>.</p>
     <![endif]-->
     <noscript>Tú nýtur ein alnótskaga sum ikki loyvur Javascript, tí kanst tú ikki nýta hesa síðu.</noscript>
+    <header></header>
+    <main></main>
+    <footer>
+      <a>Github</a>
+      <a>BitBucket</a>
+      <a>LinkedIn</a>
+      <a>Email</a>
+    </footer>
     <script type="text/javascript" src="scripts/modernizer.js"></script>
     <script type="text/javascript">
       if (Modernizr.serviceworker) {
-        // navigator.serviceWorker.register('./scripts/service_worker.js').then((reg) => {
-        //   console.log('Successfully registered service worker', reg)
-        // }).catch((err) => {
-        //   console.warn('Error whilst registering service worker', err)
-        // })
-
-        window.addEventListener('online', (e) => {
-          // Resync data with server.
-          console.log("You are online")
-        }, false)
-
-        window.addEventListener('offline', (e) => {
-          // Queue up events for server.
-          console.log("You are offline")
-        }, false)
-
-        // Check if the user is connected.
-        if (navigator.onLine) {
-          // Load data
-        } else {
-          // Show warning
-        }
 
       }
     </script>

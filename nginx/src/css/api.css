@@ -2,3 +2,20 @@ body {
   height: 100vh;
   overflow: hidden;
 }
+
+header {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+
+main {
+  width: 100vw;
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  float:right;
+  width: 100%
+}
