@@ -10,7 +10,20 @@ header {
 }
 
 main {
+  text-align: center;
   width: 100vw;
+  display: table;
+  height: calc(100vh - 35px);
+}
+
+.text {
+  display: table-cell;
+  vertical-align: middle;
+  -webkit-transition: opacity 2s ease-in;
+  -moz-transition: opacity 2s ease-in;
+  -o-transition: opacity 2s ease-in;
+  -ms-transition: opacity 2s ease-in;
+  transition: opacity 2s ease-in;
 }
 
 footer {
@@ -18,29 +31,4 @@ footer {
   bottom: 0px;
   width: 100%;
   margin-bottom: 15px;
-}
-
-.footer-container {
-  display: inline-flex;
-  justify-content: flex-end;
-}
-
-.footer-container-link {
-  padding-bottom: : 5px;
-  padding-top: 5px;
-  border-bottom: 2px solid white;
-  margin: 5px;
-  opacity: 0.5;
-  cursor: pointer;
-  text-decoration: none;
-  color: black;
-}
-
-.footer-container-link:last-child {
-  margin-right: 10px;
-}
-
-.footer-container-link:hover {
-  opacity: 1;
-  border-bottom: 2px solid black;
 }
