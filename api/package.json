@@ -1,0 +1,17 @@
+{
+  "name": "api-fjakkarin",
+  "version": "0.1.0",
+  "description": "This is the API for api.fjakkarin.com",
+  "main": "index.js",
+  "author": "Jóhan Davidsen",
+  "license": "MIT",
+  "dependencies": {
+    "koa": "^1.2.4",
+    "koa-compress": "^1.0.9",
+    "koa-response-time": "^1.0.2",
+    "koa-router": "^5.4.0"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}
